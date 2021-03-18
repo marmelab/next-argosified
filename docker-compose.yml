@@ -1,0 +1,11 @@
+version: '3.5'
+
+services:
+    next:
+        image: node:15-stretch
+        volumes:
+            - .:/app
+        working_dir: '/app'
+        command: npm run dev
+        ports:
+            - '8888:3000'
