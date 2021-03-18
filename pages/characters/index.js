@@ -3,7 +3,7 @@ import Link from "next/link";
 function Blog({ characters }) {
   return (
     <>
-      <h2>Personnages</h2>
+      <h1 className="text-3xl font-extrabold pb-4">Les personnages</h1>
       <ul>
         {characters.map((character) => (
           <li>
